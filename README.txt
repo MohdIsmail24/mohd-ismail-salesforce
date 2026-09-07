@@ -6,9 +6,9 @@ Files:
 - project.js / projects.js — project content and routing
 - style.css — dark Salesforce/mountain dashboard theme
 - script.js — mobile menu, theme toggle, active navigation
-- assets/profile.webp — profile photo
-- assets/projects/ — supplied Salesforce screenshots
-- assets/trailhead.webp — supplied Trailhead screenshot
+- profile.webp — profile photo
+- projects/ — supplied Salesforce screenshots
+- trailhead.webp — supplied Trailhead screenshot
 
 GitHub Pages:
 1. Create a public repository (for example: salesforce-admin-portfolio).
