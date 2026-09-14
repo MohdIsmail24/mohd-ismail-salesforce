@@ -33,7 +33,7 @@
 @media(max-width:500px){.journey-grid,.country-grid,.contact-grid{grid-template-columns:1fr}.section-block h2{font-size:21px}}
 .detail-points{display:grid;gap:10px}.detail-point{display:flex;gap:12px;align-items:flex-start;padding:13px 14px;border:1px solid var(--line);border-radius:12px;background:rgba(255,255,255,.025)}.detail-point>span{color:var(--green);font-weight:800}.detail-point p{margin:0;color:#c5d6e7;font-size:10px;line-height:1.6}.detail-outcome{margin-top:16px;padding:16px;border-radius:13px;background:rgba(50,168,255,.06);border:1px solid rgba(50,168,255,.12)}.detail-outcome p{margin:7px 0 0;color:#bfd2e5;font-size:10px;line-height:1.7}.project-summary{font-size:12px!important;color:#cfe0ef!important;margin-bottom:4px}.evidence-heading{margin-top:28px;margin-bottom:0}
 
-/* Trailhead / https://www.salesforce.com/trailblazer/mohd-ismail24 section */
+/* Trailhead / https://trailhead.salesforce.com/trailblazer/mohd-ismail24). section */
 .trailhead-section{position:relative}
 .trailhead-grid{display:grid;grid-template-columns:1fr 1.25fr .9fr;gap:18px;align-items:stretch}
 .trailhead-stats{display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:18px}
