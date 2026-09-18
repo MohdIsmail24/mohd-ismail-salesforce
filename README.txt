@@ -5,7 +5,7 @@ This package is the rebuilt responsive version.
 
 IMPORTANT:
 - index.html is at the repository ROOT.
-- assets/ contains the verified Salesforce environment and project screenshots.
+-  contains the verified Salesforce environment and project screenshots.
 - No external 3D library is required for the core visual effects.
 - Mouse hover uses pointer-based 3D tilt/glow.
 - Touch/click on mobile activates the same interaction feedback.
