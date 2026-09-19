@@ -1,3 +1,4 @@
+const stylesheet=document.querySelector('link[href^="style.css"]');if(stylesheet)stylesheet.href='style.css?v=20260919-2';
 const id=new URLSearchParams(location.search).get('id');const p=projects[id];const root=document.getElementById('detail');
 if(!p){root.innerHTML='<h1>Project not found</h1><p><a href="index.html#projects">Return to projects →</a></p>'}else{
 const evidence=(p.evidence||[]).map(x=>`<li>${x}</li>`).join('');const tags=(p.tags||[]).map(x=>`<span>${x}</span>`).join('');
