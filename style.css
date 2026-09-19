@@ -51,6 +51,8 @@
 .badge-note{margin-top:14px;color:#8fa8c4;font-size:13px;line-height:1.5;padding:13px 16px;border-left:3px solid #39a9ff;background:rgba(30,91,145,.10);border-radius:8px}
 @media(max-width:1050px){.trailhead-grid{grid-template-columns:1fr 1fr}.agentblazer-card{grid-column:1/-1}}
 @media(max-width:700px){.trailhead-grid{grid-template-columns:1fr}.agentblazer-card{grid-column:auto}.trailhead-profile img{min-height:250px}}
+.trailhead-section{padding-top:24px;padding-bottom:24px}.trailhead-section .section-head{margin-bottom:14px}.trailhead-section .section-head h2{font-size:22px}.trailhead-grid{grid-template-columns:1fr 1.15fr .9fr;gap:12px}.trailhead-stats{padding:12px;gap:8px}.trail-stat{padding:12px 10px}.trail-stat strong{font-size:22px}.trail-stat span{font-size:10px}.trailhead-profile{padding:16px;min-height:0}.trailhead-icon{width:48px;height:48px;font-size:30px}.trailhead-caption{padding:0;gap:4px}.trailhead-caption span{font-size:10px}.agentblazer-card{padding:16px}.agentblazer-card h3{font-size:18px;margin:4px 0 6px}.agentblazer-card p{font-size:10px;line-height:1.5;margin-bottom:8px}.badge-note{font-size:10px;padding:10px 12px}
+@media(max-width:700px){.trailhead-grid{grid-template-columns:1fr}.trailhead-section .section-head{align-items:flex-start;gap:8px}}
 
 /* Clear project screenshot viewer */
 .clickable-shot{cursor:zoom-in;position:relative}
