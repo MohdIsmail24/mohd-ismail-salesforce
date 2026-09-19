@@ -1,7 +1,7 @@
-const scene=document.getElementById('referenceScene');
-let raf=0,tx=0,ty=0,cx=0,cy=0;
-function setPointer(x,y){if(!scene)return;const r=scene.getBoundingClientRect();tx=((x-r.left)/r.width-.5);ty=((y-r.top)/r.height-.5);}
-function animate(){if(scene){cx+=(tx-cx)*.08;cy+=(ty-cy)*.08;scene.style.transform=`perspective(1600px) rotateX(${(-cy*2.8).toFixed(2)}deg) rotateY(${(cx*3.8).toFixed(2)}deg) scale(1.018)`;document.documentElement.style.setProperty('--mx',`${50+cx*18}%`);document.documentElement.style.setProperty('--my',`${50+cy*18}%`);}raf=requestAnimationFrame(animate)}
-if(scene){scene.addEventListener('pointermove',e=>setPointer(e.clientX,e.clientY));scene.addEventListener('pointerleave',()=>{tx=0;ty=0});scene.addEventListener('touchmove',e=>{if(e.touches[0])setPointer(e.touches[0].clientX,e.touches[0].clientY)},{passive:true});scene.addEventListener('touchend',()=>{tx=0;ty=0});}
-animate();
-document.querySelectorAll('[data-tilt]').forEach(el=>{el.addEventListener('pointermove',e=>{const r=el.getBoundingClientRect();const x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;el.style.transform=`perspective(900px) rotateX(${-y*3}deg) rotateY(${x*4}deg) translateZ(4px)`});el.addEventListener('pointerleave',()=>el.style.transform='');el.addEventListener('pointerdown',e=>{const r=el.getBoundingClientRect();const x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;el.style.transform=`perspective(900px) rotateX(${-y*3}deg) rotateY(${x*4}deg) translateZ(4px)`});el.addEventListener('pointerup',()=>setTimeout(()=>el.style.transform='',220))});
+const menuBtn=document.getElementById('menuBtn'), sidebar=document.getElementById('sidebar'), themeBtn=document.getElementById('themeBtn');
+menuBtn?.addEventListener('click',()=>sidebar.classList.toggle('open'));
+document.querySelectorAll('.nav-link').forEach(a=>a.addEventListener('click',()=>sidebar?.classList.remove('open')));
+const saved=localStorage.getItem('mi-theme'); if(saved==='light') document.body.classList.add('light');
+themeBtn?.addEventListener('click',()=>{document.body.classList.toggle('light');localStorage.setItem('mi-theme',document.body.classList.contains('light')?'light':'dark');});
+const links=[...document.querySelectorAll('.nav-link')]; const sections=links.map(x=>document.querySelector(x.getAttribute('href'))).filter(Boolean);
+const obs=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){links.forEach(l=>l.classList.remove('active')); const a=links.find(l=>l.getAttribute('href')==='#'+e.target.id);a?.classList.add('active');}}),{rootMargin:'-35% 0px -55% 0px'}); sections.forEach(s=>obs.observe(s));

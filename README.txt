@@ -7,7 +7,7 @@ Files:
 - style.css — dark Salesforce/mountain dashboard theme
 - script.js — mobile menu, theme toggle, active navigation
 - profile.webp — profile photo
-- projects/ — supplied Salesforce screenshots
+-  — supplied Salesforce screenshots
 - trailhead.webp — supplied Trailhead screenshot
 
 GitHub Pages:
