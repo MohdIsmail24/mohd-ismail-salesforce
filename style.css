@@ -65,7 +65,7 @@
 .lightbox-caption{position:absolute;bottom:18px;left:50%;transform:translateX(-50%);font-size:11px;color:#b9cce0;text-align:center;background:rgba(5,16,28,.78);padding:8px 14px;border-radius:999px;border:1px solid rgba(149,181,212,.16)}
 body.lightbox-open{overflow:hidden}
 .trailhead-no-photo{padding:24px;display:flex;align-items:center;gap:22px;min-height:250px}
-.trailhead-icon{width:92px;height:92px;border-radius:22px;display:grid;place-items:center;font-size:44px;background:linear-gradient(145deg,rgba(50,168,255,.16),rgba(154,124,255,.12));border:1px solid rgba(102,215,255,.2)}
+.trailhead-icon{width:48px;height:48px;border-radius:12px;display:grid;place-items:center;font-size:30px;background:linear-gradient(145deg,rgba(50,168,255,.16),rgba(154,124,255,.12));border:1px solid rgba(102,215,255,.2)}
 .trailhead-no-photo .trailhead-caption{border:0;padding:0;gap:10px}
 .trailhead-no-photo .trailhead-caption b{font-size:18px}
 .trailhead-no-photo .trailhead-caption span{max-width:520px}
