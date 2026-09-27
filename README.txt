@@ -12,7 +12,7 @@ Files:
 
 GitHub Pages:
 1. Create a public repository (for example: salesforce-admin-portfolio).
-2. Upload all files and the assets folder at the repository root.
+2. Upload all files and the  folder at the repository root.
 3. Settings → Pages → Deploy from a branch → main → /(root).
 4. Leave Custom domain blank unless you own a domain.
 
